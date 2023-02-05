@@ -3,7 +3,8 @@
   type="text/javascript">
 </script>
 
-## Introduction
+## Diffusion Models
+### Introduction
 
 ```python
 def helloworld():
