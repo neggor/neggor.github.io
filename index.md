@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+Working on some notes on Diffusion Models at the moment...
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+$$B = (X^TX)^{-1}X^TY$$
