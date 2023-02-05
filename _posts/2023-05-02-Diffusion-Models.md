@@ -3,4 +3,9 @@
   type="text/javascript">
 </script>
 
-## Diffusion Models
+## Introduction
+
+```python
+def helloworld():
+    print('Hello world!)
+```
