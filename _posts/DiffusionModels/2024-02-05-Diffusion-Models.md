@@ -1,3 +1,6 @@
+---
+layout: page
+---
 
 ## Diffusion Models I
 ---
@@ -24,13 +27,13 @@ These notes are (mostly) based on:
 ---
 The name diffusion already gives a clue about the underlying idea: Reversing a _diffusion_ process. In order to do so we parameterize a function that is able to go from pure noise (end point of the diffusion process) to the original coherently structured substance. In the sense of going from noise to coherent data diffusion models are similar to GAN, but the similarities end there. 
 
-![Alt Text](_posts/DiffusionModels/Images/DiffusionDalle2.png)
+![Alt Text](/assets/images/DiffusionModels/DiffusionDalle2.png)
 
 Another way of looking at this, motivated by the _score modelling_ point of view, is the idea of "surfing" a high dimensional space towards the areas where the coherence (w.r.t our data) within the dimensions is maximized. Or, what is the same, climbing a high dimensional probability distribution towards the peak areas. To clarify, high probability regions (the peaks) in this space are where the combination of the dimensions is more likely to render an observation belonging to our dataset. I think this is quite an interesting though!
 
 The next image (which is constructed by the code showed here) describes this process of surfing the 28x28 dimensional space of the MNIST dataset towards high probability regions... consequently reconstructing a coherent image!
 
-![Alt Text](_posts/DiffusionModels/Images/MNIST_SAMPLING.gif)
+![Alt Text](/assets/images/DiffusionModels/MNIST_SAMPLING.gif)
 
 But, how on earth we can do this? 
 
