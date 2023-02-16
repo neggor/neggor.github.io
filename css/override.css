@@ -2,7 +2,13 @@ hr {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #5e0a0a;
+  border-radius: 3px;
+  background-color: rgb(28, 28, 49);
+}
 /* Post navigation links */
 .post_navi {
   display: flex;

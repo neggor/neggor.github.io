@@ -2,6 +2,7 @@
 layout: default
 ---
 <link href="/css/override.css" rel="stylesheet" type="text/css">
+<link href="/css/syntax.css" rel="stylesheet" >
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -17,9 +18,6 @@ layout: default
       {%- endif -%}</p>
   </header>
 
-  <div class="share-links">
-    {% include sharelinks.html %}
-  </div>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}

@@ -19,13 +19,23 @@ github_username: "neggor"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 theme: "minima"
-
+minima:
+  skin: dark
 rss: rss
 
+markdown: kramdown
+highlighter: rouge
 kramdown:
+  input: GFM
   syntax_highlighter_opts:
-    disable: true
-    
+    default_lang: html
+    css_class: 'syntax'
+    span:
+      line_numbers: true
+    block:
+      line_numbers: false
+      start_line: 1
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
