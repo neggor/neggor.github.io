@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Diffusion Models I. Approximating the gradient of the data distribution.
+tag: ML
 ---
 <link href="/css/syntax.css" rel="stylesheet" >
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
