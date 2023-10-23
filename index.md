@@ -14,9 +14,8 @@ layout: default
         <img src="/assets/images/personalPage/profile_picture.jpg" alt="Profile Picture" width="150px">
     </div>
     <div style="flex:2;">
-        <p><strong>Hello, and welcome to my personal website!</strong></p>
-
-        <p></p>
+        <p><strong>Hello, and welcome to my online notebook!!</strong></p>
+        <p>Here I gather some notes on different topics</p>
         
     </div>
 </div>
