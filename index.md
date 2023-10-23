@@ -16,9 +16,7 @@ layout: default
     <div style="flex:2;">
         <p><strong>Hello, and welcome to my personal website!</strong></p>
 
-        <p>My name is Jordi, and I am a PhD student in Bioinformatics at WUR. My research focuses on developing novel machine learning methods for analyzing complex biological data and extracting meaningful insights to improve our understanding of plants. </p>
-        
-        <p>I am particularly interested in deep learning, and I am passionate about applying machine learning to solve real-world problems!</p>
+        <p></p>
         
     </div>
 </div>
