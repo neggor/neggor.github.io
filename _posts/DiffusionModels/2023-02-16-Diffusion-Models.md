@@ -417,7 +417,7 @@ data_mnist = keras.datasets.mnist.load_data(path="mnist.npz")[0][0]
 data_mnist = scale_image(data_mnist[..., np.newaxis])
 ```
 
-And now... we really need to go fancy with the model. An arbitrary network does not work, we need something with a proper inductive bias. Since we are concerned with the gradient at the pixel level (each of our dimensions) but still need to take information over the whole picture, a network designed for image segmentation is ideal. An option is RefineNet (the images are obviously from the paper).
+And now... we really need to go fancy with the model. An arbitrary network does not work, we need something with a proper inductive bias. Since we are concerned with the gradient at the pixel level (each of our dimensions) but still need to take information over the whole picture, a network designed for image segmentation is ideal. An option is RefineNet (the images are from the paper).
 
 <p align="center">
   <img src="/assets/images/DiffusionModels/Refine_net.PNG" alt="RefineNet"/>

@@ -7,3 +7,4 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 gem "minima"
 gem "jekyll-sitemap"
+gem 'jekyll-scholar', group: :jekyll_plugins
