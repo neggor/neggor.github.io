@@ -70,7 +70,7 @@ this is a matrix with 14x14 columns and 512 rows) and the question feature vecto
 
 Again, in order to visualize the attention, they upscale the 14x14 distribution to the original resolution 448x448 using a Gaussian filter.
 
-## transformers
+## Transformers
 In [Attention is all you need](https://arxiv.org/pdf/1706.03762) they remove any convolutions or RNNs from the architecture. They use self-attention to compute encoder and decoder hidden states (instead of an RNN, such as a bidirectional RNN) and they use attention to map hidden states of encoder and decoder (the latter, same as before).
 
 The key points of this architecture are its speed (no need for recurrence, no need for convolutions) and its easy parallelism.
