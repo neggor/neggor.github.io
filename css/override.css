@@ -49,3 +49,5 @@ code {
   font-size: 2.5em;
   opacity: 0.3;
 }
+
+.post-content { text-align: justify; }

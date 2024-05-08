@@ -79,7 +79,7 @@ To me, that result was not intuitive, let's see this in action:
   <img src="/assets/images/SVMs/svm_margin_norm.png" alt="Different margin with different norms, for the same direction"/>
 </p>
 
-Yep, it seems to work... Intuitively, given a direction, we can think of what the increase/decrease in $$\mathbf{\lVert x \rVert}$$ required to move from one hyperplane to the other. The bigger the sensitivity to $$\mathbf{x}$$ the less we need to move to get a change of hyperplane. This is why minimizing the norm of $$\mathbf{\beta}$$ is equivalent to maximizing the margin.
+Yep, it seems to work... Intuitively, given a direction, we can think of the increase/decrease in $$\mathbf{\lVert x \rVert}$$ that is required to move from one hyperplane to the other (e.g. from S1 to S2). The bigger the sensitivity to $$\mathbf{x}$$ the less we need to move to get a change of hyperplane. This is why minimizing the norm of $$\mathbf{\beta}$$ is equivalent to maximizing the margin.
 
 # Optimal Separating Hyperplane problem formulation.
 
@@ -97,7 +97,7 @@ This is the same formulation given in Elements of Statistical Learning (they arr
 ## Optimization process.
 # Constrained optimization (Lagrangian).
 
-The idea of the Lagrangian is based on the fact that the gradient of the function we are optimizing and the gradient of the constraint are proportional. The proportionality constant is called the Lagrange multiplier. The Lagrangian is just the way of packing up that information in a way that, when optimizing the Lagrangian w.r.t the original variables and the Lagrange multiplier, we are just finding the proportionality constant and satisfying the constraint. Nevertheless, for inequality constraints, as is the case here, the Lagrangian is not (directly) enough. We need to introduce the idea of the KKT conditions.
+The idea of the Lagrangian is based on the fact that the gradient of the function we are optimizing and the gradient of the constraint are proportional at the optimum. The proportionality constant is called the Lagrange multiplier. The Lagrangian is just the way of packing up that information in a way that, when optimizing the Lagrangian w.r.t the original variables and the Lagrange multiplier, we are just finding the proportionality constant and satisfying the constraint. Nevertheless, for inequality constraints, as is the case here, the Lagrangian is not (directly) enough. We need to introduce the idea of the KKT conditions.
 
 # KKT conditions.
 
@@ -152,7 +152,7 @@ $$ \max_{\mathbf{\alpha}} \sum_{i=1}^n \alpha_i - \frac{1}{2} \sum_{i=1}^n \sum_
 
 $$\text{s.t.} \quad \sum_{i=1}^n \alpha_i y_i = 0 \text{ and } \alpha_i \geq 0 \quad \forall \quad i = 1, \dots, n$$
 
-(The first one from the minimization problem, the second one from KKT conditions)
+(Constraints to satisfy KKT conditions)
 
 Which is easy to solve. 
 
