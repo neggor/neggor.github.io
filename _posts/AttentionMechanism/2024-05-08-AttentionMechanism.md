@@ -122,7 +122,7 @@ In [Diffusion Models Beat GANs on Image Synthesis](https://arxiv.org/pdf/2105.05
 
 $$\text{AdaGN}(h, y) = y_s \text{GroupNorm}(h) + y_b.$$ 
 
-Where $$h$$are the activations of network and $$y_s, y_b$$ are embeddings of time and class (this is also an interesting approach for conditioning a model actually, without attention). However, their main guidance is still a classifier.
+Where $$h$$ are the activations of network and $$y_s, y_b$$ are embeddings of time and class (this is also an interesting approach for conditioning a model actually, without attention). However, their main guidance is still a classifier.
 
 
 Classifier-Free guidance consist on training a conditional and unconditional model simultaneously, essentially it uses the class as input to the network or a 'None' class for the unconditional one.
