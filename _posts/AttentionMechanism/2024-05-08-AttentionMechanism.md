@@ -131,7 +131,7 @@ In the [Stable Diffusion paper](https://arxiv.org/pdf/2112.10752) they turn thei
 
 Note that the UNet is the backbone of this algorithm, and it is used in every step of the generation! The encoder $$\tau_{\theta}$$ (they use a transformer here) must be trained simultaneously with whole UNet.
 
-## Visual transformers
+## Vision transformers
 
 Applying [transformers to images](https://arxiv.org/pdf/2010.11929) seems counterintuitive (given the magnificent inductive biases that CNN have). And indeed they require a patching pre-processing step. The patches then are considered as elements of a sequence. This does not seem to be particularly relevant for me here beyond the fact that they indeed need to do patches, so attention on top of convolution features is indeed not a "weird thing".
 
