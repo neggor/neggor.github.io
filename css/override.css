@@ -105,3 +105,15 @@ div.language-python.highlighter-rouge {
   padding-left: 20px;
   padding-right: 20px;
 }
+/* Change the site title color */
+.site-title {
+  color: #837769 !important;      /* warm gold, Dark Academia style */
+  font-family: 'DM Sans', sans-serif;  /* optional, if you want to keep your heading font */
+  font-weight: 600;        /* optional boldness */
+}
+
+/* Optional: change color on hover */
+.site-title:hover {
+  color: #f0b56d !important;        /* soft amber on hover */
+  text-decoration: none;   /* remove underline if any */
+}
