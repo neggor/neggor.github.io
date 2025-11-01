@@ -1,53 +1,107 @@
-hr {
-  margin-top: 30px;
-  margin-bottom: 20px;
+/* === Dark Academia Theme Overrides === */
+
+/* Import elegant fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Crimson+Pro:wght@400;500;700&display=swap');
+
+/* --- General layout --- */
+body {
+  font-family: 'Crimson Pro', serif;
+  background-color: #0e0e0c;
+  color: #e6dfcf;
+  line-height: 1.75;
+  font-size: 17px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
-pre,
+
+/* --- Headings --- */
+h1, h2, h3, h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  color: #f0e8d2;
+  letter-spacing: 0.01em;
+  margin-top: 1.6em;
+}
+
+/* --- Links --- */
+a {
+  color: #c5a96d;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #ec9d09;
+  text-decoration: underline;
+}
+
 code {
-  font-size: 15px;
-  border: 1px solid #5e0a0a;
-  border-radius: 3px;
-  background-color: rgb(28, 28, 49);
-}
-/* Post navigation links */
-.post_navi {
-  display: flex;
+  background-color: #0b0b0b  !important;      /* very dark background */
+  color: #00ff41;                 /* bright neon green text */
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  font-family: 'Fira Code', monospace;
+
+  border: none !important;
+  box-shadow: none !important;
 }
 
-.post_navi-label {
-  font-size: 0.8em;
-  opacity: 0.5;
+/* --- Fenced / block code --- */
+pre.syntax {
+  background-color: #0b0b0b !important;   /* very dark background */
+  color: #00ff41;                          /* bright neon green text */
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95em;
+  line-height: 1.4;
+  text-indent: 0;
+
+  border: 5px solid #555 !important;      /* thin border on outer box only */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* subtle dark shadow */
 }
 
-.post_navi .post_navi-item {
-  padding: 0 2.2em;
-  width: 50%;
-  position: relative;
-  color: inherit !important;
+/* Inner <code> just inherits color */
+pre.syntax code {
+  color: #00ff41;                          /* neon green text */
+  background: none !important;             /* remove any inner background */
+  border: none !important;                 /* remove any inner border */
+  padding: 0;                              /* let <pre> handle padding */
 }
 
-.post_navi .nav_prev {
-  text-align: left;
+/* --- Header + footer --- */
+.site-title {
+  font-family: 'DM Sans', sans-serif;
+  color: #d2c4a1;
+}
+.site-header {
+  border-bottom: 1px solid #1d1d1b;
+  padding-bottom: 0.8em;
+}
+.site-footer {
+  border-top: 1px solid #1d1d1b;
+  font-size: 0.9em;
+  color: #8c7851;
 }
 
-.post_navi .nav_next {
-  text-align: right;
+/* --- Blockquotes --- */
+blockquote {
+  border-left: 3px solid #8c7851;
+  padding-left: 1em;
+  color: #cfc7b0;
+  font-style: italic;
 }
-
-.post_navi .nav_prev .post_navi-arrow {
-  left: 0;
+/* Override Rouge wrappers and outer divs */
+div.highlight,
+div.language-python.highlighter-rouge {
+  background-color: #0b0b0b !important;   /* dark Matrix background */
+  border: none !important;
+  box-shadow: none !important;
 }
-
-.post_navi .nav_next .post_navi-arrow {
-  right: 0;
+/* Widen the main blog container */
+.wrapper, main.content {
+  max-width: 900px !important;   /* increase from default 700-750px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-.post_navi .post_navi-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.5em;
-  opacity: 0.3;
-}
-
-.post-content { text-align: justify; }

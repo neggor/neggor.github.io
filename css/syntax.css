@@ -1,81 +1,47 @@
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #d0d0d0;
-  background-color: #151515;
+/* === Dark Academia syntax highlighting === */
+
+
+
+/* Line numbers (if enabled) */
+.highlight pre {
+  margin: 0;
 }
-.highlight .err {
-  color: #151515;
-  background-color: #ac4142;
+
+/* --- Token colors --- */
+
+/* Comments */
+.highlight .c, .highlight .cm, .highlight .c1 {
+  color: #7a735f;
+  font-style: italic;
 }
-.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
-  color: #505050;
+
+/* Keywords */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr {
+  color: #d7b87f;
+  font-weight: 500;
 }
-.highlight .cp {
-  color: #f4bf75;
+
+/* Strings */
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s1, .highlight .s2 {
+  color: #c5a96d;
 }
-.highlight .nt {
-  color: #f4bf75;
+
+/* Numbers */
+.highlight .m, .highlight .mf, .highlight .mi, .highlight .mh {
+  color: #d7b87f;
 }
+
+/* Functions / names */
+.highlight .nf, .highlight .nx {
+  color: #f0e8d2;
+}
+
+/* Operators */
 .highlight .o, .highlight .ow {
-  color: #d0d0d0;
+  color: #bfa674;
 }
-.highlight .p, .highlight .pi {
-  color: #d0d0d0;
-}
-.highlight .gi {
-  color: #90a959;
-}
-.highlight .gd {
-  color: #ac4142;
-}
-.highlight .gh {
-  color: #6a9fb5;
-  background-color: #151515;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #aa759f;
-}
-.highlight .kc {
-  color: #d28445;
-}
-.highlight .kt {
-  color: #d28445;
-}
-.highlight .kd {
-  color: #d28445;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #90a959;
-}
-.highlight .sa {
-  color: #aa759f;
-}
-.highlight .sr {
-  color: #75b5aa;
-}
-.highlight .si {
-  color: #8f5536;
-}
-.highlight .se {
-  color: #8f5536;
-}
-.highlight .nn {
-  color: #f4bf75;
-}
-.highlight .nc {
-  color: #f4bf75;
-}
-.highlight .no {
-  color: #f4bf75;
-}
-.highlight .na {
-  color: #6a9fb5;
-}
-.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
-  color: #90a959;
-}
-.highlight .ss {
-  color: #90a959;
+
+/* Types / constants */
+.highlight .kt, .highlight .kc, .highlight .bp {
+  color: #b2925a;
 }

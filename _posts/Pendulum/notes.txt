@@ -1,0 +1,22 @@
+## UPDATE (19-12-2024)
+
+(also ignoring friction in what follows, todo)
+So, the thing is that this formulation is not general. This is not considering a linear model in general, but only matrices in SO(2n).
+This framework cannot handle other groups such GL(n) because what it is being explicitly model is just a rotation matrix, essentially a torus.
+
+This only works because there exist a linear map between an ellipse and a circle. That allows me to modle then the system in terms of SO(2), but
+this might not be the general case!!! 
+
+Now, a cool question, that requires getting much stronger in LA is how would one go to parameterize this eigenvalue in a general way.
+TODO: Check if there is a mention of those details in the paper.
+TODO: Check the other system they model
+TODO: Confirm r is actually a constant (it will surely be)
+
+TODO: But, furthermore, what is here to learn regarding the importance of the symmetries?? Especially how important they are for extrapolation in machine learning.
+
+Because you are also ignoring the fact that the koopman theorem states linear models, not a subset of them... But one may wonder, to which extent could we 
+actually try to model stuff using a projection to an space where SO(n) is a good approximation? That would be very nice, but it is kind of stupid hahaha
+
+But ok, despite all the difficulties I think it is actually good that I am making progress with this!
+
+Furthermore!! To which extent DMD is unable to deal with this? Well because the continuous spectra I guess, but that function also does not seem so complicated.

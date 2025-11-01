@@ -9,4 +9,8 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
   <link href="/css/syntax.css" rel="stylesheet" >
+  <link rel="stylesheet" href="{{ '/css/syntax.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/override.css' | relative_url }}">
+
+
 </head>

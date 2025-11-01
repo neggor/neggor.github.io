@@ -20,7 +20,7 @@ github_username: "neggor"
 #########################################################################################
 theme: "minima"
 minima:
-  skin: dark
+  skin: classic
 #rss: rss
 
 markdown: kramdown
@@ -31,7 +31,7 @@ kramdown:
     default_lang: html
     css_class: 'syntax'
     span:
-      line_numbers: true
+      line_numbers: false
     block:
       line_numbers: false
       start_line: 1
@@ -50,3 +50,11 @@ defaults:
       type: post
     values:
       tags: Other
+gems:
+  - jekyll-scholar
+
+scholar:
+  style: apa
+  locale: en
+  source: ./_bibliography
+  bibliography: references.bib
