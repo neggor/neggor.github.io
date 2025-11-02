@@ -117,3 +117,26 @@ div.language-python.highlighter-rouge {
   color: #f0b56d !important;        /* soft amber on hover */
   text-decoration: none;   /* remove underline if any */
 }
+/* Ensure proper heading hierarchy */
+h1 {
+  font-size: 2.4rem;   /* biggest */
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.9rem;   /* slightly smaller */
+  font-weight: 600;
+  margin-top: 1.6rem;
+}
+
+h3 {
+  font-size: 1.5rem;   /* smaller still */
+  font-weight: 500;
+  margin-top: 1.2rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
